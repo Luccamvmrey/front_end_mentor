@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: hsl(217, 54%, 11%);
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    font-size: 14px;
+}
+
+.content {
+    background: hsl(216, 50%, 16%);
+    width: 300px;
+    height: 460;
+    margin: 100px;
+    display: inline-block;
+    border-radius: 10px;    
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.img img {
+    width: 260px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.info {
+    margin: 0px 20px;
+    text-align: left;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.title:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.description {
+    margin: 25px 0;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+.details div {
+    display: inline-block;
+    width: 45%;
+    font-weight: 400;
+}
+
+.details div:last-of-type {
+    margin-left: 20px;
+}
+
+.detail:last-of-type {
+    text-align: right;
+}
+
+.detail img , p {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+.detail p{
+    margin-left: 5px;
+}
+
+.detail__price {
+    color: hsl(178, 100%, 50%);
+}
+
+.detail__time {
+    color: hsl(215, 51%, 70%);
+}
+
+.madeby {
+    margin: 35px 20px;
+    text-align: left;
+    height: 32px;
+    position: relative;
+}
+
+.madeby img , p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.madeby img{
+    width: 32px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.madeby p {
+    margin-left: 10px;
+}
+
+.madeby span {
+    color: hsl(215, 51%, 70%);
+}
+
+.madeby::before {
+    content: "";
+    width: 260px;
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+    position: absolute;
+    top: -15px;
+}
+
+.madeby a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.madeby a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+
