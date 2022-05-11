@@ -6,11 +6,11 @@
 }
 
 body {
-text-align: center;
+  text-align: center;
 }
 
 img {
-    width: 60px;
+  width: 60px;
 }
 
 h1 {
@@ -71,6 +71,12 @@ a {
   color: hsl(0, 0%, 95%);
 }
 
+#sedan a:active {
+  border: 2px solid hsl(0, 0%, 95%);
+  background: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+
 #suv {
   background-color: hsl(184, 100%, 22%);
 }
@@ -80,6 +86,12 @@ a {
 }
 
 #suv a:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+  background: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+}
+
+#suv a:active {
   border: 2px solid hsl(0, 0%, 95%);
   background: hsl(184, 100%, 22%);
   color: hsl(0, 0%, 95%);
@@ -100,37 +112,43 @@ a {
   color: hsl(0, 0%, 95%);
 }
 
+#luxury a:active {
+  border: 2px solid hsl(0, 0%, 95%);
+  background: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+
 @media (min-width: 920px) {
-    .component {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin: 88px auto;
-        width: 918px;
-        height: 500px;
-    }
+  .component {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 88px auto;
+    width: 918px;
+    height: 500px;
+  }
 
-    .plan {
-        height: 100%;
-        justify-content: start;
-    }
+  .plan {
+    height: 100%;
+    justify-content: start;
+  }
 
-    h1 {
-        margin-top: 40px;
-    }
+  h1 {
+    margin-top: 40px;
+  }
 
-    p {
-        margin-top: 36px;
-    }
+  p {
+    margin-top: 36px;
+  }
 
-    a {
-        margin-top: 82px;
-    }
+  a {
+    margin-top: 82px;
+  }
 
-    #sedan {
-        border-radius: 8px 0 0 8px;
-    }
+  #sedan {
+    border-radius: 8px 0 0 8px;
+  }
 
-    #luxury {
-        border-radius: 0 8px 8px 0;
-    }
+  #luxury {
+    border-radius: 0 8px 8px 0;
+  }
 }
