@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+text-align: center;
+}
+
+img {
+    width: 60px;
+}
+
+h1 {
+  font-family: "Big Shoulders Display";
+  font-size: 2.2rem;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5rem;
+}
+
+a {
+  display: block;
+  background: hsl(0, 0%, 95%);
+  text-align: center;
+  height: 48px;
+  width: 148px;
+  border-radius: 24px;
+  padding: 12px;
+  font-family: "Lexend Deca", sans-serif;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.component {
+  display: inline-block;
+  width: 331px;
+  border-radius: 8px;
+  margin: 88px auto;
+}
+
+.plan {
+  height: 442px;
+  padding: 48px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#sedan {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 8px 8px 0 0;
+}
+
+#sedan a {
+  color: hsl(31, 77%, 52%);
+}
+
+#sedan a:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+  background: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+
+#suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+#suv a {
+  color: hsl(184, 100%, 22%);
+}
+
+#suv a:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+  background: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+}
+
+#luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 8px 8px;
+}
+
+#luxury a {
+  color: hsl(179, 100%, 13%);
+}
+
+#luxury a:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+  background: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+
+@media (min-width: 920px) {
+    .component {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 88px auto;
+        width: 918px;
+        height: 500px;
+    }
+
+    .plan {
+        height: 100%;
+        justify-content: start;
+    }
+
+    h1 {
+        margin-top: 40px;
+    }
+
+    p {
+        margin-top: 36px;
+    }
+
+    a {
+        margin-top: 82px;
+    }
+
+    #sedan {
+        border-radius: 8px 0 0 8px;
+    }
+
+    #luxury {
+        border-radius: 0 8px 8px 0;
+    }
+}

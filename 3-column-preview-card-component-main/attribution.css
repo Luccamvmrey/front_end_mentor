@@ -1,0 +1,8 @@
+.attribution {
+  font-size: 11px;
+  width: 100%;
+  display: inline-block;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
