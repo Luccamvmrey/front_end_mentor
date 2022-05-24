@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: hsl(204, 43%, 93%);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 313px;
+  height: 726px;
+  border-radius: 8px;
+}
+
+a {
+  background:hsl(71, 73%, 54%);
+  text-decoration: none;
+  color: white;
+  width: 265px;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 16px;
+}
+
+h1 {
+  font-size: 18px;
+  color: white;
+}
+
+div {
+  height: 242px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px 24px;
+}
+
+#call {
+  background: white;
+  border-radius: 8px 8px 0 0;
+}
+
+#call h1 {
+  color: #2BB3B1;
+}
+
+#call h2 {
+  color: hsl(71, 73%, 54%);
+}
+
+#call p {
+  color: hsl(218, 22%, 67%);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+#price {
+  background: #2BB3B1;
+}
+
+#price h2 {
+  color: hsl(204, 43%, 93%);
+}
+
+span {
+  font-size: 26px;
+  vertical-align: middle;
+  color: white;
+}
+
+#price p {
+  color: hsl(204, 43%, 93%);
+}
+
+#info {
+  background: #4ABEBD;
+  border-radius: 0 0 8px 8px;
+  padding-right: 80px;
+}
+
+#info p {
+  color: hsla(204, 43%, 93%, 0.8);
+  line-height: 24px;
+  font-size: 14px;
+}
+
+@media (min-width: 640px) {
+  section {
+    width: 636px;
+    height: 476px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #call {
+    grid-column: 1 / -1;
+    padding: 44px 80px 44px 40px;
+    justify-content: space-around;
+  }
+
+  #call p {
+    font-size: 16px;
+  }
+
+  #price {
+    border-radius: 0 0 0 8px;
+  }
+
+  #info {
+    border-radius: 0 0 8px 0;
+  }
+}
