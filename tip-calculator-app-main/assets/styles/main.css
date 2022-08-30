@@ -107,6 +107,10 @@ main {
   color: #004c52;
 }
 
+#people {
+  width: 100%;
+}
+
 #result {
   border-radius: 16px;
   height: 35%;
